@@ -41,7 +41,7 @@ export default function Feedback() {
   };
 
   const total = countTotalFeedback();
-  const options = ['good', 'neutral', 'bad'];
+  const options = Object.keys({ good, neutral, bad });
   const positivePercentage = countPositiveFeedbackPercentage(good);
   return (
     <div>
